@@ -21,7 +21,7 @@
       </div>
       <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
-          <button @click="add" type="button" class="btn btn-default pull-right">
+          <button type="button" class="btn btn-default pull-right" @click="add">
             提交
           </button>
         </div>
@@ -35,24 +35,21 @@ export default {
   name: "AddComment",
   data() {
     return {
-      name: "",
       content: "",
+      name: "",
     };
   },
   methods: {
     add() {
       const { name, content } = this;
       if (!name || !content) {
-        alert("输入内容不能为空");
+        alert("内容不能为空");
         return;
       }
-      this.addComment(name, content);
+      this.$bus.$emit("addComment", name, content);
       this.name = "";
       this.content = "";
     },
-  },
-  props: {
-    addComment: Function,
   },
 };
 </script>
