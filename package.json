@@ -13,7 +13,8 @@
     "element-ui": "^2.15.3",
     "umd": "^3.0.3",
     "vue": "^2.6.11",
-    "vue-router": "^3.5.2"
+    "vue-router": "^3.5.2",
+    "vuex": "^3.6.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
@@ -28,7 +29,7 @@
     "less": "^3.13.1",
     "less-loader": "^5.0.0",
     "prettier": "^2.2.1",
-    "vue-cli-plugin-element": "~1.0.1",
+    "vue-cli-plugin-element": "file:node_modules/vue-cli-plugin-element",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {

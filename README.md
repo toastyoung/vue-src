@@ -1,24 +1,30 @@
-# vue-demo
+# vue-exec
 
-## Project setup
-```
-npm install
-```
+## 下载
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+`npm i element-ui vue-router vuex axios`
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## 配置
 
-### Lints and fixes files
-```
-npm run lint
-```
+1. element-ui
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- 配置按需加载
+- vue add element
+
+2. vue-router
+
+- router/index.js
+- main.js
+
+3. vuex
+
+- store/index.js
+- main.js
+
+## 使用
+
+1. 配置路由
+
+- 定义路由组件
+- 写路由配置
+- router-view
